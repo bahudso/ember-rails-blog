@@ -1,0 +1,13 @@
+<div class="col-md-4 col-md-offset-4">
+	<form {{action 'authenticate' on='submit'}}>
+		<div class="form-group">
+	    	<label for='identification'>Login</label>
+	    	{{input id='identification' class='form-control' placeholder='Enter Login' value=identification}}
+	    </div>
+	    <div class="form-group">
+		    <label for='password'>Password</label>
+		    {{input id='password' class='form-control' placeholder='Enter Password' type='password' value=password}}
+		</div>
+	    <button class='btn btn-success' type='submit'>Login</button>
+	</form>
+</div>
