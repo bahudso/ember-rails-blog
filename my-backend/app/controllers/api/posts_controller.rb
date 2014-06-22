@@ -2,7 +2,7 @@ class Api::PostsController < ApplicationController
 	respond_to :json
 
 	def index
-		respond_with Post.all.to_json
+		respond_with Post.all
 	end
 
 	def show
