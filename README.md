@@ -1,9 +1,9 @@
-ember-cli-simple-auth-devise
+ember-rails-auth-blog
 ============================
 
-Authenticate to a Rails/Devise server from an Ember CLI app with [Bootstrap](http://getbootstrap.com/) styling. 
+A blog application with authentication to a Rails/Devise server from an Ember CLI frontend app with [Bootstrap](http://getbootstrap.com/) styling. 
 
-Step by step guide used to build this project: [ember-cli & ember-simple-auth-devise](http://givan.se/p/00000000)
+Original base project comes from [givanse/ember-cli-simple-auth-devise](https://github.com/givanse/ember-cli-simple-auth-devise)
 
 ## Build
 ```bash
