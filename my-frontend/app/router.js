@@ -7,6 +7,7 @@ var Router = Ember.Router.extend({
 Router.map(function() {
 	this.route('application');
 	this.route('login');
+	this.route('signup');
 	this.resource('posts', function() {
 		this.route('new');
 		this.route('show', {path: ':post_id'});
