@@ -14,7 +14,7 @@ class Api::PostsController < ApplicationController
 		@post.title = params[:post][:title]
 		@post.body = params[:post][:body]
 	    if @post.save
-	      respond_with @post
+	      render json: @post
 	    end
 	end
 
