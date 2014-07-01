@@ -1,4 +1,5 @@
-export default Ember.Route.extend({
+export default Ember.Route.extend(
+    Ember.SimpleAuth.ApplicationRouteMixin, {
     controllerName: 'posts.edit',
 
     renderTemplate: function() {
