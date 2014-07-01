@@ -1,2 +1,6 @@
 <h3>{{title}}</h3>
+<div class="button-container">
+	{{link-to 'Edit' 'posts.edit' this}}
+	<a href="#" {{action 'delete' this}}>Delete</a>
+</div>
 <p>{{body}}</p>
