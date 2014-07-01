@@ -4,6 +4,9 @@
 		<li class="list-group-item">
 			<button type="button" class="close btn" {{action 'delete' post}}>&times;</button>
 			<h4>{{~#link-to 'posts.show' this}}{{post.title}}{{~/link-to}}</h4>
+			<div class="button-container">
+				{{link-to 'Edit' 'posts.edit' post}}
+			</div>
 			<br>
 			<p>{{post.body}}</p>
 		</li>
