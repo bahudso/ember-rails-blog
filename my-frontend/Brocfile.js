@@ -33,31 +33,31 @@ app.import({
   development: 'vendor/ember-data/ember-data.js',
   production:  'vendor/ember-data/ember-data.prod.js'
 }, {
-  'ember-data': [
-    'default'
-  ]
+  exports: {
+    'ember-data': [
+      'default'
+    ]
+  }
 });
 
 app.import('vendor/ic-ajax/dist/named-amd/main.js', {
-  'ic-ajax': [
-    'default',
-    'defineFixture',
-    'lookupFixture',
-    'raw',
-    'request',
-  ]
+  exports: {
+    'ic-ajax': [
+      'default',
+      'defineFixture',
+      'lookupFixture',
+      'raw',
+      'request',
+    ]
+  }
 });
-
-app.import('vendor/ember-simple-auth/ember-simple-auth.js');
-app.import('vendor/ember-simple-auth/ember-simple-auth-devise.js');
 
 app.import('vendor/rails-csrf/dist/named-amd/main.js', {
-  'rails-csrf': [
-    'service'
-  ]
+  exports: {
+    'rails-csrf': [
+      'service'
+    ]
+  }
 });
-
-app.import('vendor/bootstrap/dist/css/bootstrap.css');
-app.import('vendor/bootstrap/dist/js/bootstrap.js');
 
 module.exports = app.toTree();
