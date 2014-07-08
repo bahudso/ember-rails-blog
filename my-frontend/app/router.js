@@ -6,9 +6,8 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('application');
-  this.route('protected');
   this.route('login');
-  
+
   this.resource('posts', function() {
 	this.route('new');
 	this.route('show', {path: ':post_id'});
